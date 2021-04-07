@@ -86,7 +86,7 @@ export default class ActionSheet extends React.Component<Props, State> {
           </React.Fragment>
         )}
         {isVisible && useModal && (
-          <Modal animationType="none" transparent={true} onRequestClose={this._selectCancelButton}>
+          <Modal animationType="none" statusBarTranslucent={true} transparent={true} onRequestClose={this._selectCancelButton}>
             {overlay}
             {this._renderSheet()}
           </Modal>
